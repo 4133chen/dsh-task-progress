@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Task progress bars",
+    "description": "Shows a progress bar for every session task and offers optional reminders when tasks complete."
+  }
+}

@@ -1,0 +1,5 @@
+# The task-progress bundle patch: one host row whose browser half upgrades the
+# session task list into per-task progress bars and optional completion reminders.
+- insert:
+    - id: task-progress
+      name: '@local/task-progress'

@@ -1,0 +1,53 @@
+{
+  "name": "@local/task-progress",
+  "version": "1.0.0",
+  "description": "Per-task progress bars for DeepSeek Harness session tasks, with optional completion reminders.",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "4133chen",
+  "homepage": "https://github.com/4133chen/dsh-task-progress#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4133chen/dsh-task-progress.git"
+  },
+  "bugs": {
+    "url": "https://github.com/4133chen/dsh-task-progress/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "web-ui",
+    "todo",
+    "progress",
+    "reminder"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-api-session-controller"
+      ]
+    }
+  }
+}

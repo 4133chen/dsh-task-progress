@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Barras de progreso de tareas",
+    "description": "Muestra una barra de progreso para cada tarea de la sesión y ofrece avisos opcionales al completarse."
+  }
+}

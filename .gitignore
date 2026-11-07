@@ -1,0 +1,11 @@
+# Harness/OS noise
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local editors
+.idea/
+.vscode/
+*.swp

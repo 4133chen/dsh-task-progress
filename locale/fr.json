@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Barres de progression des tâches",
+    "description": "Affiche une barre de progression pour chaque tâche de la session et propose des rappels facultatifs à la fin."
+  }
+}
